@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('judul');
             $table->string('penulis');
-            $table->integer('year');
+            $table->integer('tahun');
             $table->foreignId('member_id')->constrained()->nullable();
             $table->timestamps();
         });
